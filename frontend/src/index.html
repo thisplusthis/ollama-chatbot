@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+          rel="stylesheet">
+    <!--<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked-highlight/lib/index.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+</head>
+<body>
+<div id="model-selector">
+    <label for="model-chooser">LLM Model:</label>
+    <select name="model" id="model-chooser"></select>
+</div>
+<div class="container">
+    <div id="chat-area"></div>
+    <input type="text" id="prompt-input" placeholder="Enter your prompt">
+    <!--<button id="send-btn" onclick="sendMessage()">Send</button>-->
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "ollama front-end",
+  "main": "script.js",
+  "dependencies": {
+  }
+}
