@@ -1,6 +1,6 @@
-# Containerized Ollama Node.js Chatbot
+# Containerized Node and Ollama Chatbot
 
-### Start the server/containers:
+### Start the server / containers:
 `docker-compose up --build`
 
 ### Chatbot front-end location:
@@ -9,12 +9,8 @@
 
 ### Loading Different Ollama Models:
 
-Get into ollama container:
+1. Get into the ollama container: `docker -it ollama sh`
 
-`docker -it ollama sh`
+2. Pull the LLM with ollama: `ollama pull <your-model>`
 
-Pull the LLM with ollama:
-
-`ollama pull <your-model>`
-
-- New LLM models will be auto populated in the dropdown when loading the front-end
+- All "new" LLM models will be populated in the dropdown dynamically when loading the front-end.
