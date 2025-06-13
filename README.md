@@ -9,7 +9,7 @@
 
 ### Loading Different Ollama Models:
 
-1. Get into the ollama container: `docker -it ollama sh`
+1. Get into the ollama container: `docker exec -it ollama sh`
 
 2. Pull the LLM with ollama: `ollama pull <your-model>`
 
