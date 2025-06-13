@@ -1,10 +1,6 @@
-// import { Marked } from "marked";
-// import { markedHighlight } from "marked-highlight";
-// import hljs from 'highlight.js';
-
+const prompt = document.getElementById('prompt-input');
 const { Marked } = globalThis.marked;
 // const { markedHighlight } = globalThis.markedHighlight;
-
 /*const marked = new Marked(
     markedHighlight({
         emptyLangClass: 'hljs',
@@ -15,7 +11,6 @@ const { Marked } = globalThis.marked;
         }
     })
 );*/
-const prompt = document.getElementById('prompt-input');
 
 async function populateModelDropdown() {
     const dropdown = document.getElementById('model-chooser'); // Replace 'modelSelect' with your dropdown's ID

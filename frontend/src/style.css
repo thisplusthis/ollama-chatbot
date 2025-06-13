@@ -1,7 +1,7 @@
 :root {
-    --background-color: #0f1012;  /* Blue */
-    --primary-color: #c9bacc; /* Gray */
-    --border-color: #69b6ff;  /* Green */
+    --background-color: #0f1012;
+    --primary-color: #c9bacc;
+    --border-color: #69b6ff;
     --button-color: hotpink;
     --highlight-color: #fa73ff;
     --input-focus-color: hotpink;
@@ -20,11 +20,28 @@ a {
     color: var(--highlight-color);
 }
 
+input, select {
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    border: 1px solid var(--highlight-color);
+    border-radius: 5px;
+    padding: 3px;
+    text-align:center;
+}
+
+input:focus {
+    outline: 1px solid var(--highlight-color);
+    color: var(--primary-color);
+}
+
+input:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
-    /*border: 1px solid var(--border-color);
-    border-radius: 5px;*/
 }
 
 #chat-area {
@@ -48,25 +65,6 @@ a {
     background-color: var(--background-color);
     color: var(--primary-color);
     border-color: var(--highlight-color);
-}
-
-input, select {
-    color: var(--primary-color);
-    background-color: var(--background-color);
-    border: 1px solid var(--highlight-color);
-    border-radius: 5px;
-    padding: 3px;
-    text-align:center;
-}
-
-input:focus {
-    outline: 1px solid var(--highlight-color);
-    color: var(--primary-color);
-}
-
-input:disabled {
-    opacity: 0.4;
-    pointer-events: none;
 }
 
 #model-selector {
